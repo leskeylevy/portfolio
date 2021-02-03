@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "levy"
+    }
+  },
+  "defaultProject": "levy",
+  "cli": {
+    "analytics": false
+  }
 }

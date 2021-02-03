@@ -1,0 +1,135 @@
+.full-height-grow {
+    display: flex;
+    flex-direction: column;
+}
+.navbar-brand {
+    display: flex;
+    align-items: center;
+    font-size: 1.25rem;
+    color: inherit;
+    text-decoration: none;
+}
+
+.title {
+    font-weight: 500;
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    margin-top: 0;
+}
+.sub-title {
+    font-weight: 500;
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+.btn {
+    color: white;
+    background-color: #1762A7;
+    padding: .75rem 1.5rem;
+    border-radius: .5rem;
+    text-decoration: none;
+    font-size: .9rem;
+}
+
+.home-main-section {
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+    flex-grow: 1;
+    height: 100vh;
+}
+.home-main-section .img-wrapper {
+    flex-grow: 1;
+    flex-direction: column;
+    display: flex;
+    align-items: stretch;
+    justify-content: flex-end;
+}
+.home-main-section .landing-img {
+    background-image: url('../../assets/images/land.png');
+    flex-grow: 1;
+    height: 80vh;
+    max-height: 80vh;
+    min-width: 30vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom  left;
+    z-index: 1;
+}
+.home-main-section .call-to-action {
+    display: flex;
+    flex-direction:column;
+    align-items: flex-start;
+    margin: 1rem;
+    align-self: center;
+    padding: 5%;
+
+}
+.home-page-circle-1 {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    background-color: rgba(188, 58, 127, 0.356);
+    background-attachment: fixed;
+    bottom: 5vw;
+    left: 1vw;
+}
+
+.home-page-circle-2 {
+    position: absolute;
+    width: 20vw;
+    height: 20vw;
+    border-radius: 50%;
+    background-color: rgba(188, 58, 177, 0.075);
+    background-attachment: fixed;
+    top: 7vw;
+    left: 35vw;
+}
+
+.home-page-circle-3 {
+    position: absolute;
+    overflow: hidden;
+    width: 45vw;
+    height: 45vw;
+    bottom: 0;
+    right: 0;
+}
+
+.home-page-circle-3::before {
+    content: '';
+    transform: translate(40%, 40%);
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    background-color: rgba(188, 58, 177, 0.062);
+    background-attachment: fixed;
+}
+
+.discover-main-section {
+    height: 87vh;
+}
+
+.discover-main-section h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+.projects-section{
+    height: 87vh;
+}
+.contact-section {
+    height: 87vh;
+}
+
+@media (max-width:900px) {
+    .home-main-section .img-wrapper {
+        display: none;
+    }
+    .home-main-section {
+        justify-content: center;
+    }
+}
