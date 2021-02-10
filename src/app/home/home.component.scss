@@ -14,12 +14,16 @@
     font-weight: 500;
     font-size: 3rem;
     margin-bottom: 1rem;
-    margin-top: 0;
+    margin-top: 19px;
+    // color: #26272e;
+    line-height: 24px;
 }
 .sub-title {
     font-weight: 500;
     font-size: 1.2rem;
     margin-bottom: 2rem;
+    line-height: 24px;
+    
 }
 .btn {
     color: white;
@@ -73,6 +77,7 @@
     background-attachment: fixed;
     bottom: 5vw;
     left: 1vw;
+    z-index: -1;
 }
 
 .home-page-circle-2 {
@@ -106,9 +111,28 @@
     background-attachment: fixed;
 }
 
-.discover-main-section {
-    height: 87vh;
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 50%;
+    height: 100%;
+    z-index: -20;
 }
+.zlider1 {
+    background: linear-gradient(to left, #272833, #272833);
+}
+.zlider2 {
+    background: linear-gradient(to right, #272833, #272833);
+    // left: 50%;
+}
+
+
+// .discover-main-section {
+//     height: 87vh;
+// }
 
 .discover-main-section h1 {
     display: flex;
