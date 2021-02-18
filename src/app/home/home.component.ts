@@ -1,7 +1,10 @@
 import { NONE_TYPE } from '@angular/compiler';
 import { Component, OnInit } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
-import { gsap, Power2, TweenMax } from 'gsap';
+import { gsap } from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
+
+gsap.registerPlugin(ScrollTrigger);
 
 @Component({
   selector: 'app-home',
@@ -12,6 +15,7 @@ export class HomeComponent implements OnInit {
 
 
 tl = gsap.timeline({delay: 1});
+
 // tl2 = new TimelineMax();
 contactForm: FormGroup;
 blueCar = document.getElementById('blueCar');
@@ -21,11 +25,14 @@ constructor(private fb: FormBuilder) { }
 
 ngOnInit(): void {
 
+  // landing page animation
   this.tl.from('header', {duration: .7, ease: 'Power2.out', y: -60});
   // this.tl.from('.hero-content', {duration: 1, ease: 'Power2.out', opacity: 0, y: -40});
   this.tl.from('.illustration', {duration: 1, ease: 'Power2.out', opacity: 0});
 
   // TweenMax.set(this.blueCar, {zIndex: 9});
+
+
 
   gsap.fromTo('#blueCar', {
     x: -920,
@@ -53,10 +60,18 @@ ngOnInit(): void {
     x: -100,
   }, {
     x: 800,
-    duration: 60,
+    duration: 160,
     ease: 'none',
     delay: 3,
   });
+
+  // end of landing page animation
+
+ // scroll animations
+
+
+
+ // end of scroll animation
 
 
   this.contactForm = this.fb.group({

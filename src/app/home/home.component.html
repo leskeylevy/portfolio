@@ -236,14 +236,19 @@
     
 </section>
 
-<section id="about" class=" container" >
+
+<!-- About section -->
+
+<section id="about" class="container" >
 
    <div class="call-to-action">
-       <h1 class="title" style="text-align: center;line-height: 40px;">Who is this guy?</h1>
+       <h1 class="title" style="text-align: center;line-height: 40px;margin: 20px;">Who is this guy?</h1>
    </div>
    <div class="row">
-       <div class="image col-md-6 col-sm-5" >
-           <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aut, repudiandae modi commodi qui mollitia, quae reprehenderit, architecto repellendus quisquam necessitatibus dolor possimus illum minima nemo perferendis ullam libero non ea?</p>
+       <div class="col-md-6 col-sm-5" >
+           <div class="img-wrapper">
+               <div class="meImg"></div>
+           </div>
        </div>
        <div class="aboutMe col-md-6 col-sm-5" >
             <div class="subtitle" >
@@ -251,7 +256,7 @@
                 His background as a full stack web dev gives him a unique and insightfull perspective into the journey of building web based solutions from design all through to production.
                 Driven by the curiosity of what makes web products successfull, Riungu is eager to build on his web development skills by staying on top of the lastest trends in web development as well as trends in consumer behaviour.
                 Outside the tech world Riungu is a huge soccer and Arsenal fan (clearly disapointments don't me get down).
-                Riungu is currently available for work and taking on projects, if you have a project you'd like to discuss, reach out to me via the form <a href="#contact">here</a>.
+                Riungu is currently available for work and taking on projects, if you have a project you'd like to discuss, reach out via the form <a href="#contact">here</a>.
             </div>
        </div>
    </div>
@@ -260,12 +265,19 @@
 
 </section> 
 
-<!-- <section id="projects" class="container projects-section">
+<!-- Projects section -->
+
+<section id="projects" class="container">
     <h1 class="title" style="top: 10%;">Projects</h1>
-    <div>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dicta ad maxime ipsum rem a totam libero pariatur nesciunt laudantium, voluptatibus eveniet tempore, nihil blanditiis explicabo minus cumque temporibus! Consectetur, modi?
+    <div class="row">
+        <div class="col-md-6 ">
+            <img class="projImage" src="../../assets/images/prj1.png" alt="My first project">
+        </div>
+        <div class="col-md-6">
+            <img  class="projImage" src="../../assets/images/prj2.png" alt="My first project">
+        </div>
     </div>
-</section> -->
+</section>
 
 <section id="contact"  style="background-color: #161B42;">
     <div style="display: flex; justify-content: center;">
@@ -279,14 +291,16 @@
             <form [formGroup]="contactForm" (ngSubmit)="onSubmit()">
                 <div class="form-row">
                     <div class="form-group col-5">
-                        <label for="name">Name<input type="text" formControlName="name" placeholder="Mr. John Wick" class="form-control"></label>
+                        <label for="name">Name</label>
+                        <input type="text" formControlName="name" placeholder="Mr. John Wick" class="form-control">
                         
                         <div *ngIf="submitted && f.name.errors" class="invalid-feedback">
                             <div *ngIf="f.name.errors.required">Name is required!</div>
                         </div>
                     </div>
                     <div class="form-group col-5">
-                        <label for="email">Email <input type="text" formControlName="email" placeholder="dontkillmydog@all.pencil" class="form-control"></label>
+                        <label for="email">Email</label>
+                        <input type="text" formControlName="email" placeholder="dontkillmydog@all.pencil" class="form-control">
                        
                     </div>
                 </div>

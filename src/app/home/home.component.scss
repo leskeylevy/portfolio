@@ -79,17 +79,33 @@ section.hero {
         width: 100%;
     }
 }
+
+//about section
+
 #about {
-    min-height: 100vh;
+    min-height: 100vh;    
+    scale: 0.8;
 }
 
-.image {
-    top: 1em;
-    // bottom: 1em;
-    padding: 1em;
+.img-wrapper {
     display: flex;
-    align-items: center;
+    flex-grow: 1;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: flex-end;
 }
+.meImg {
+    background-image: url('../../assets/images/land.png');
+    flex-grow: 1;
+    height: 80vh;
+    max-height: 80vh;
+    min-width: 30vw;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom left;
+    z-index: 1;
+}
+
 .aboutMe {
     color: black;
     margin-top: 7%;
@@ -101,4 +117,26 @@ section.hero {
 
 }
 
+// projects section
 
+#projects {
+    min-height: 100vh;
+    max-width: 100vw;
+}
+
+.projImage {
+    display: flex;
+    max-width: 45vw;
+    padding: 15px;
+    height: auto;
+}
+
+#projects {
+    text-align: center;
+}
+
+@media only screen and (max-width: 768px){
+    .projImage {
+       max-width: 100vw !important;
+    }
+}
