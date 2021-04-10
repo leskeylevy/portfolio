@@ -1,6 +1,7 @@
-import {ElementRef, EventEmitter, Input, Output  } from '@angular/core';
+import { ElementRef, EventEmitter, Input, Output, Directive } from '@angular/core';
 import { TimelineMax } from 'gsap';
 
+@Directive()
 export class CoreAnimationDirective {
     @Input() duration = 1;
     @Input() delay = 0;
