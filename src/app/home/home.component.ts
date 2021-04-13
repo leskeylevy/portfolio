@@ -24,45 +24,45 @@ constructor(private fb: FormBuilder) { }
 
 ngOnInit(): void {
 
-  // // landing page animation
-  // this.tl.from('header', {duration: .7, ease: 'Power2.out', y: -60});
-  // // this.tl.from('.hero-content', {duration: 1, ease: 'Power2.out', opacity: 0, y: -40});
-  // this.tl.from('.illustration', {duration: 1, ease: 'Power2.out', opacity: 0});
+  // landing page animation
+  this.tl.from('header', {duration: .7, ease: 'Power2.out', y: -60});
+  // this.tl.from('.hero-content', {duration: 1, ease: 'Power2.out', opacity: 0, y: -40});
+  this.tl.from('.illustration', {duration: 1, ease: 'Power2.out', opacity: 0});
 
-  // // TweenMax.set(this.blueCar, {zIndex: 9});
+  // TweenMax.set(this.blueCar, {zIndex: 9});
 
 
 
-  // gsap.fromTo('#blueCar', {
-  //   x: -920,
-  // }, {
-  //   x: 920,
-  //   duration: 8,
-  //   ease: 'none',
-  //   delay: 4,
-  //   repeat: 38,
-  //   repeatDelay: 2,
-  // });
+  gsap.fromTo('#blueCar', {
+    x: -920,
+  }, {
+    x: 920,
+    duration: 8,
+    ease: 'none',
+    delay: 4,
+    repeat: 38,
+    repeatDelay: 2,
+  });
 
-  // gsap.fromTo('#greyCar', {
-  //   x: 600
-  // }, {
-  //   x: -920,
-  //   duration: 8,
-  //   ease: 'none',
-  //   delay: 2,
-  //   repeat: 37,
-  //   repeatDelay: 1.5
-  // });
+  gsap.fromTo('#greyCar', {
+    x: 600
+  }, {
+    x: -920,
+    duration: 8,
+    ease: 'none',
+    delay: 2,
+    repeat: 37,
+    repeatDelay: 1.5
+  });
 
-  // gsap.fromTo('#sun', {
-  //   x: -100,
-  // }, {
-  //   x: 800,
-  //   duration: 160,
-  //   ease: 'none',
-  //   delay: 3,
-  // });
+  gsap.fromTo('#sun', {
+    x: -100,
+  }, {
+    x: 800,
+    duration: 160,
+    ease: 'none',
+    delay: 3,
+  });
 
   // end of landing page animation
 
